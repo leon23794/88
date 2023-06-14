@@ -53,7 +53,7 @@ def post_process(target_img: Image) :
         gp, bp = predictions[0]
         print(bp)
         if(bp > 0.8 ): 
-            return None
+            return target_img
         else :
             return target_img
 
